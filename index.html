@@ -280,31 +280,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Robotic fabric manipulation in garment production for sewing, cutting, and ironing 
+            requires reliable flattening and alignment, yet remains challenging due to fabric deformability, 
+            effectively infinite degrees of freedom, and frequent occlusions from wrinkles, folds, and the 
+            manipulator’s End‑Effector (EE) and arm. To address these issues, this paper proposes the first 
+            Random‑to‑Target Fabric Flattening (RTFF) policy, which aligns a random wrinkled fabric state to 
+            an arbitrary wrinkle‑free target state. The proposed policy adopts a hybrid Imitation 
+            Learning–Visual Servoing (IL–VS) framework, where IL learns with explicit fabric models for coarse 
+            alignment of the wrinkled fabric toward a wrinkle‑free state near the target, and VS ensures fine 
+            alignment to the target. Central to this framework is a template‑based mesh that offers precise 
+            target state representation, wrinkle‑aware geometry prediction, and consistent vertex correspondence 
+            across RTFF manipulation steps, enabling robust manipulation and seamless IL–VS switching. 
+            Leveraging the power of mesh, a novel IL solution for RTFF—Mesh Action Chunking Transformer (MACT)—is 
+            then proposed by conditioning the mesh information into a Transformer-based policy. The RTFF policy 
+            is validated on a real dual‑arm tele‑operation system, showing zero‑shot alignment to different targets, 
+            high accuracy, and strong generalization across fabrics and scales.
           </p>
         </div>
       </div>
